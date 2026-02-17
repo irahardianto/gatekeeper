@@ -1,0 +1,10 @@
+version: 1
+
+defaults:
+  container: golang:1.23
+  timeout: 30s
+
+gates:
+  - name: unit_tests
+    type: exec
+    command: go test ./...

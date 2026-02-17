@@ -1,0 +1,36 @@
+version: 1
+
+defaults:
+  container: golang:1.23
+  timeout: 30s
+  blocking: true
+  on_error: block
+
+gates:
+  - name: unit_tests
+    type: exec
+    command: go test ./... -json
+    container: golang:1.23
+    parser: go-test-json
+    timeout: 60s
+    only: ["*.go"]
+
+  - name: lint
+    type: exec
+    command: golangci-lint run --out-format sarif ./...
+    container: golangci/golangci-lint:latest
+    parser: sarif
+    only: ["*.go"]
+
+  - name: custom_check
+    type: script
+    path: ./scripts/validate-api.sh
+    container: alpine:latest
+    on_error: warn
+
+  - name: secret_review
+    type: llm
+    provider: gemini-3-pro
+    mode: diff
+    prompt: "Check for hardcoded secrets, API keys, or credentials"
+    max_file_size: 100KB

@@ -1,0 +1,6 @@
+version: 1
+
+gates:
+  - name: check
+    type: script
+    # path is missing — should fail validation

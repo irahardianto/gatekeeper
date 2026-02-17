@@ -1,0 +1,18 @@
+{"Time":"2026-02-16T10:00:00Z","Action":"start","Package":"example.com/myapp"}
+{"Time":"2026-02-16T10:00:00Z","Action":"run","Package":"example.com/myapp","Test":"TestAdd"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestAdd","Output":"=== RUN   TestAdd\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestAdd","Output":"--- PASS: TestAdd (0.00s)\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"pass","Package":"example.com/myapp","Test":"TestAdd","Elapsed":0.001}
+{"Time":"2026-02-16T10:00:00Z","Action":"run","Package":"example.com/myapp","Test":"TestDivide"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestDivide","Output":"=== RUN   TestDivide\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestDivide","Output":"    divide_test.go:15: expected 2, got 3\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestDivide","Output":"--- FAIL: TestDivide (0.00s)\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"fail","Package":"example.com/myapp","Test":"TestDivide","Elapsed":0.001}
+{"Time":"2026-02-16T10:00:00Z","Action":"run","Package":"example.com/myapp","Test":"TestMultiply"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestMultiply","Output":"=== RUN   TestMultiply\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestMultiply","Output":"    multiply_test.go:10: wrong result\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestMultiply","Output":"--- FAIL: TestMultiply (0.00s)\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"fail","Package":"example.com/myapp","Test":"TestMultiply","Elapsed":0.001}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Output":"FAIL\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Output":"FAIL\texample.com/myapp\t0.005s\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"fail","Package":"example.com/myapp","Elapsed":0.005}

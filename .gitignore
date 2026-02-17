@@ -1,0 +1,6 @@
+# Build output
+gatekeeper
+
+# Coverage output
+*.out
+*_cov.html

@@ -1,0 +1,7 @@
+version: 1
+
+gates:
+  - name: review
+    type: llm
+    provider: gemini-3-pro
+    # prompt is missing — should fail validation

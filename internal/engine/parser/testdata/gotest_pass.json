@@ -1,0 +1,12 @@
+{"Time":"2026-02-16T10:00:00Z","Action":"start","Package":"example.com/myapp"}
+{"Time":"2026-02-16T10:00:00Z","Action":"run","Package":"example.com/myapp","Test":"TestAdd"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestAdd","Output":"=== RUN   TestAdd\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestAdd","Output":"--- PASS: TestAdd (0.00s)\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"pass","Package":"example.com/myapp","Test":"TestAdd","Elapsed":0.001}
+{"Time":"2026-02-16T10:00:00Z","Action":"run","Package":"example.com/myapp","Test":"TestSubtract"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestSubtract","Output":"=== RUN   TestSubtract\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Test":"TestSubtract","Output":"--- PASS: TestSubtract (0.00s)\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"pass","Package":"example.com/myapp","Test":"TestSubtract","Elapsed":0.001}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Output":"PASS\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"output","Package":"example.com/myapp","Output":"ok  \texample.com/myapp\t0.003s\n"}
+{"Time":"2026-02-16T10:00:00Z","Action":"pass","Package":"example.com/myapp","Elapsed":0.003}

@@ -1,0 +1,51 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint"
+        }
+      },
+      "results": [
+        {
+          "ruleId": "no-unused-vars",
+          "level": "error",
+          "message": {
+            "text": "'x' is assigned a value but never used."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/app.js"
+                },
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 5
+                }
+              }
+            }
+          ]
+        },
+        {
+          "ruleId": "complexity",
+          "level": "warning",
+          "message": {
+            "text": "Function 'complex' has a complexity of 15."
+          },
+          "locations": [
+              {
+                  "physicalLocation": {
+                      "artifactLocation": {
+                          "uri": "src/utils.js"
+                      }
+                  }
+              }
+          ]
+        }
+      ]
+    }
+  ]
+}

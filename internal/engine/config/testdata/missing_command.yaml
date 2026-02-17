@@ -1,0 +1,6 @@
+version: 1
+
+gates:
+  - name: lint
+    type: exec
+    # command is missing — should fail validation
