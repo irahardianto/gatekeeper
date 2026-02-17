@@ -86,12 +86,16 @@ git commit
 
 ### Install
 
+**Via Go install (recommended):**
+```bash
+go install github.com/irahardianto/gatekeeper/cmd/gatekeeper@latest
+```
+
+**Build from source:**
 ```bash
 git clone https://github.com/irahardianto/gatekeeper.git
 cd gatekeeper
 go build -o gatekeeper ./cmd/gatekeeper
-
-# Move to your PATH
 sudo mv gatekeeper /usr/local/bin/
 ```
 

@@ -1,0 +1,26 @@
+# Gatekeeper configuration
+# See: https://github.com/irahardianto/gatekeeper
+version: 1
+
+defaults:
+  container: "golangci/golangci-lint:latest"
+  timeout: 60s
+  blocking: true
+  on_error: block
+
+gates:
+  - name: go-vet
+    type: exec
+    command: "go vet ./..."
+    only: ["*.go"]
+
+  # - name: lint
+  #   type: exec
+  #   command: "golangci-lint run ./..."
+  #   parser: sarif
+  #   only: ["*.go"]
+
+  # - name: test
+  #   type: exec
+  #   command: "go test -race ./..."
+  #   only: ["*.go"]
