@@ -87,7 +87,12 @@ git commit
 ### Install
 
 ```bash
-go install github.com/irahardianto/gatekeeper/cmd/gatekeeper@latest
+git clone https://github.com/irahardianto/gatekeeper.git
+cd gatekeeper
+go build -o gatekeeper ./cmd/gatekeeper
+
+# Move to your PATH
+sudo mv gatekeeper /usr/local/bin/
 ```
 
 ### Initialize
